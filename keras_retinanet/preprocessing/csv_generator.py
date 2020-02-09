@@ -208,7 +208,8 @@ class CSVGenerator(Generator):
         if  img_path[-6:] == '01.jpg':
             image_index1 = image_index
 
-
+        else:
+            image_index1 = image_index-1  
         image1=read_image_bgr(self.image_path(image_index))
         image2=read_image_bgr(self.image_path(image_index1))
         
